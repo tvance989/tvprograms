@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/music', function(req, res, next) {
-  res.render('music', { title: 'TV Programs Music' });
+  res.render('music', { title: 'TV Programs - Music' });
 });
 
 module.exports = router;
