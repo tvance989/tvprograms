@@ -3,6 +3,19 @@ extends layout
 block content
 	h1 Told you I program.
 	p.lead Here are some of my side projects.
-	h4 Gear Font
-	p
-		a(href='https://jsfiddle.net/tvance989/ss03kqqp/', target='_blank') jsfiddle
+
+	ul.nav.nav-tabs.nav-justified(role='tablist')
+		li.active(role='presentation')
+			a(href='#gears', aria-controls='gears', role='tab', data-toggle='tab') Gear Font
+		li(role='presentation')
+			a(href='#spot-it', aria-controls='spot-it', role='tab', data-toggle='tab') Spot it! Generator
+		li(role='presentation')
+			a(href='#disc', aria-controls='disc', role='tab', data-toggle='tab') Disc Golf Scorecard
+
+	.tab-content
+		#gears.tab-pane.active(role='tabpanel')
+			| Check out the demo on&nbsp;
+			a(href='https://jsfiddle.net/tvance989/ss03kqqp/', target='_blank') jsfiddle
+			| .
+		#spot-it.tab-pane(role='tabpanel') coming soon...
+		#disc.tab-pane(role='tabpanel') coming soon...
