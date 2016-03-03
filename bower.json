@@ -1,0 +1,23 @@
+{
+  "name": "tvprograms",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Taylor Vance"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/tvance989/tvprograms",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "bootstrap": "^3.3.6"
+  }
+}
