@@ -16,6 +16,15 @@ block content
 		#gears.tab-pane.active(role='tabpanel')
 			| Check out the demo on&nbsp;
 			a(href='https://jsfiddle.net/tvance989/ss03kqqp/', target='_blank') jsfiddle
-			| .
+			| . WIP v2 below.
+			
+			input#gear-input.form-control(type='text', placeholder='Enter text to gearify')
+			#gear-output
+
 		#spot-it.tab-pane(role='tabpanel') coming soon...
+
 		#disc.tab-pane(role='tabpanel') coming soon...
+
+block scripts
+	script(src='/bower_components/raphael/raphael-min.js')
+	script(src='/js/gears.js')
