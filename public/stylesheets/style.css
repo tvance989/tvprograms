@@ -1,3 +1,34 @@
 body {
-  padding-top: 70px;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+}
+
+.margin-0-auto {
+	margin: 0 auto;
+}
+
+nav {
+}
+
+header, section {
+	padding-bottom: 10em;
+}
+header {
+}
+header img {
+	max-height: 50em;
+}
+section {
+}
+
+#about {
+}
+
+#code {
+}
+#code .thumbnail img {
+	height: 10em;
+}
+
+#music {
 }

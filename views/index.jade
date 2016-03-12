@@ -1,6 +1,43 @@
 extends layout
 
 block content
-	.alert.alert-warning This site is a WIP.
-	h1 #{title}
-	p.lead I'm Taylor Vance. I program.
+	header
+		h1 I'm Taylor Vance.
+		p.lead I program.
+		img.img-responsive.margin-0-auto(src='https://scontent-dfw1-1.xx.fbcdn.net/hphotos-xta1/v/t1.0-9/1378679_10155381076775253_4892624013795793746_n.jpg?oh=0f3d83d07878ada4d468a38cc87ac001&oe=5753AA29')
+
+	section#code
+		h1 Code
+		p.lead Here are some of my side projects.
+		.container
+			.row
+				for project in projects
+					.col-sm-4.col-sm-offset-4
+						a(href='#{project.href}')
+							.thumbnail
+								img(src='#{project.img}', alt='#{project.title}')
+								h3 #{project.title}
+								p #{project.desc}
+
+	section#music
+		h1 Music
+		p.lead TV Records too.
+		p Garrett and I have been collaborating for over a decade.
+
+		.container
+			.row
+				.col-sm-6
+					p CURI/OSITY is our most recent endeavor. It's the culmination of over a year of musical brainstorming.
+					iframe(style='border: 0; width: 350px; height: 786px;', src='https://bandcamp.com/EmbeddedPlayer/album=3599526398/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/', seamless)
+						a(href='http://dragonemperor.bandcamp.com/album/curi-osity') CURI/OSITY by The Dragon Emperor and His Largest Army
+				.col-sm-6
+					p HUMANe was conceived, written, and produced in a single night in 11th grade.
+					iframe(style='border: 0; width: 350px; height: 340px;', src='https://bandcamp.com/EmbeddedPlayer/album=2714321413/size=large/bgcol=ffffff/linkcol=0687f5/artwork=none/transparent=true/' seamless)
+						a(href='http://theshynessclinic.bandcamp.com/album/humane') HUMANe by The Shyness Clinic
+
+
+	section#contact
+		h1 Contact
+		a(href='https://github.com/tvance989/tvprograms', target='_blank') GitHub
+		br
+		a(href='https://www.linkedin.com/in/taylor-vance-a4915756', target='_blank') LinkedIn

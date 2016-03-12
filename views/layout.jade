@@ -8,6 +8,7 @@ html(lang='en')
 		title= title
 		link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.min.css')
 		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Montserrat:700,400', type='text/css')
 	body
 		nav.navbar.navbar-inverse.navbar-fixed-top
 			.container
@@ -17,33 +18,22 @@ html(lang='en')
 						span.icon-bar
 						span.icon-bar
 						span.icon-bar
-					a.navbar-brand(href='/')
+					a.navbar-brand(href='/#')
 						img.pull-left(alt='TV', src='/images/tv-logo.svg', height='20')
 						| &nbsp;Programs
 
 				#navbar.collapse.navbar-collapse
-					ul.nav.navbar-nav
+					ul.nav.navbar-nav.navbar-right
 						li
-							a(href='/') Home
+							a(href='#code') Code
 						li
-							a(href='/code') Code
-						li
-							a(href='/music') Music
+							a(href='#music') Music
 						li
 							a(href='#contact') Contact
 
-					ul.nav.navbar-nav.navbar-right
-						li
-							a(href='https://github.com/tvance989/tvprograms', target='_blank')
-								img(src='/images/GitHub-Mark-Light-32px.png', alt='github', height='20')
-						li
-							a(href='https://www.linkedin.com/in/taylor-vance-a4915756', target='_blank')
-								img(src='/images/In-White-28px-R.png', alt='linkedin', height='20')
+		block content
 
-		.container
-			block content
 		script(src='/bower_components/jquery/dist/jquery.min.js')
 		script(src='/bower_components/bootstrap/dist/js/bootstrap.min.js')
 		script(src='/js/index.js')
-		
 		block scripts

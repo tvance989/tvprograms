@@ -1,0 +1,14 @@
+extends layout
+
+block content
+	h1 Gear Font
+	p.lead Check out the demo on&nbsp;
+		a(href='https://jsfiddle.net/tvance989/ss03kqqp/', target='_blank') jsfiddle
+		| . WIP v2 below.
+
+	input#gear-input.form-control(type='text', autocomplete='off', placeholder='Enter text to gearify')
+	#gear-output
+
+block scripts
+	script(src='/bower_components/raphael/raphael-min.js')
+	script(src='/js/gears.js')
